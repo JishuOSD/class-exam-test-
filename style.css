@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2{
+    margin: 0;
+}
+/* password */
+#pass{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.473);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+#pass .wrapper{
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+}
+#pass .wrapper input{
+    padding: 10px;
+    border: 0;
+    outline: 0;
+
+}
+#pass .wrapper .bom{
+    display: flex;
+}
+#pass .wrapper button{
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+}
+#pass .wrapper .bom2{
+    display: none;
+}
+/* password end */
+
+
+/* scoll bar */
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+:root{
+    --white: #fff;
+    --black: #000;
+}
+body{
+    height: 1500px;
+}
+#nav{
+    height: 100px;
+    display: flex;
+    box-shadow: 4px 4px 30px #ccc;
+    background-color: var(--white);
+    animation: cartun 0.7s linear;
+}
+#nav span{
+    width: 40px;
+    height: 40px;
+    background-color: #4cd137;
+    /* border: 1px solid green; */ 
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    /* color: #fff; */
+    font-size: 20px;
+    cursor: pointer;
+}
+#nav.active{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    animation: active 0.7s linear;
+
+}
+@keyframes active{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes cartun{
+    100%{
+        transform: translateY(0%);
+    }
+    0%{
+        transform: translateY(100%);
+    }
+}
+/* scoll bar end */
+
+
+
+
+/* <!-- mood chang --> */
+body{
+    height: 1500px;
+}
+body.mode{
+    --white: #000;
+    --black: #fff;
+    background-color:black;
+}
+#dark p{
+    color: var(--black);
+}
+#icon{
+    /* background-color: aqua; */
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#icon .btn{ 
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--black);
+    overflow: hidden;
+     
+}
+#icon .btn span{
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 25px;
+    color: var(--black);
+}
+#icon .btn span .moon{
+    margin-top: -100%;
+}
+
+/* <!-- mood chang end --> */
+
+
+
+/* <!-- color change --> */
+
+#clrchange{
+    height: 100vh;
+    background-color: #0abde3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clrchange button{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* <!-- color change --> */
